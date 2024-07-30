@@ -1,0 +1,53 @@
+object Form1: TForm1
+  Left = 687
+  Height = 874
+  Top = 515
+  Width = 1643
+  Caption = 'Lazarus Periodic Table'
+  ClientHeight = 874
+  ClientWidth = 1643
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.3'
+  object Panel1: TPanel
+    Left = 48
+    Height = 35
+    Top = 792
+    Width = 96
+    Caption = 'Panel1'
+    TabOrder = 0
+    Visible = False
+    OnClick = Panel1Click
+  end
+  object Memo1: TMemo
+    Left = 296
+    Height = 260
+    Top = 16
+    Width = 456
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+  end
+  object CmbSearchSort: TComboBox
+    Left = 784
+    Height = 40
+    Top = 24
+    Width = 230
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 32
+    Items.Strings = (
+      'Search Name'
+      'Search Symbol'
+      'Sort Name'
+      'Sort Symbol'
+    )
+    ParentFont = False
+    TabOrder = 2
+    Text = 'CmbSearchSort'
+    OnChange = CmbSearchSortChange
+  end
+end
